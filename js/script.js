@@ -1,22 +1,24 @@
 $(function() {
 
-	var minWidth = "993px";
-	var screenWidth = $(window).width();
-    
+	var minWidth = "993";
+
+	setNav();
+
     $(window).resize(setNav);
     
-    var smallScreen = function(width) {
-    	return screeWidth <= minWidth;
-    };
+    function isSmallScreen() {
+		var screenWidth = $(window).width();
+    	return  screenWidth < minWidth;
+	};
     
-    var setNav = function() {
-    	if (smallScreen) {
-    		$("#small-nav").hide();
-    	    $("#big-nav").show();
-    	}
-    	else {
+    function setNav() {
+    	if (isSmallScreen()) {
     		$("#big-nav").hide();
     	    $("#small-nav").show();
+    	}
+    	else {
+    		$("#small-nav").hide();
+    	    $("#big-nav").show();
     	}
 	};
 });
