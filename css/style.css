@@ -1,3 +1,5 @@
+/* GENERAL / TAGS */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +8,12 @@
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    display: block;
 }
 
 section {
     padding: 10px 0;
-}
-
-.dark-color {
-    color: #181921;
+    display: block;
 }
 
 ul,
@@ -26,28 +26,171 @@ a {
     color: inherit;
 }
 
-#chxyz-icon {
-    height: 48px;
+/* CUSTOM CLASSES */
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+
+/* COLORS */
+
+.dark-background {
+    background: #181921;
+}
+
+.white-background {
+    background: #fff;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.black-text {
+    color: #000;
+}
+
+.gradient-background-rgb {
+    background: 
+        linear-gradient(
+            45deg, 
+            #ff000088, 
+            #ff000000 70%
+        )
+    , 
+        linear-gradient( 
+            315deg, 
+            #00ff0088, 
+            #00ff0000 70%
+        )
+    , 
+        linear-gradient( 
+            180deg, 
+            #0000ff88, 
+            #0000ff00 70%
+        )
+    ;
+}
+
+.shadows-background {
+    background: 
+        linear-gradient( 
+            180deg, 
+            #444444cc, 
+            #ffffff00 6px
+        )
+    , 
+        linear-gradient( 
+            0deg, 
+            #444444cc, 
+            #ffffff00 4px
+        )
+    , 
+        linear-gradient( 
+            #ffffffdd, 
+            #ffffffdd
+        )
+    ;
+}
+
+/* CONTENT */
+
+/* NAV */
+
+.chxyz-nav-icon-big {
+    height: 50px;
     width: auto;
+}
+
+.chxyz-nav-icon-small {
+    height: 30px;
+    width: auto;
+}
+
+.brand-logo {
+    float: left;
 }
 
 header {
     background: #181921;
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 0;
+    height: 50px;
 }
 
-header nav {
-    color: #fff;
+.header-inline-nav {
+    display: inline;
 }
+
+.inline-nav {
+    float: right;
+}
+
+.inline-nav li {
+    display: inline-block;
+    margin-right: 15px;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.btn-small-nav-toggle {
+    float: right;
+    margin-right: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.block-nav li {
+    display: block;
+    margin-right: 15px;
+    height: 25px;
+    line-height: 25px;
+    clear: left;
+}
+
+
+/* HOME */
 
 #home {
     background: #181921;
     color: #fff;
 }
 
+
+/* HELP */
+
 #background-help {
     color: #181921;
     background: linear-gradient( 180deg, #444444cc, #ffffff00 6px), linear-gradient( 0deg, #888888cc, #ffffff00 3px), linear-gradient( #ffffffdd, #ffffffdd);
 }
+
+
+/* SERVICES */
 
 #services {
     color: #fff;
@@ -58,9 +201,15 @@ header nav {
     color: #000;
 }
 
+
+/* PRICES */
+
 #prices {
     background: linear-gradient( 180deg, #444444cc, #ffffff00 6px), linear-gradient( 0deg, #444444cc, #ffffff00 4px), linear-gradient( #ffffffdd, #ffffffdd);
 }
+
+
+/* CONTACT */
 
 #contact {
     color: #fff;
@@ -83,19 +232,24 @@ header nav {
     height: 250px;
 }
 
+/* FOOTER */
+
+footer {
+    background-color: #181921;
+    color: #fff;
+}
+
 .page-footer ul li {
     display: inline-block;
     margin-right: 15px
 }
 
-.page-footer ul {
-    margin-bottom: 0;
-}
-
-#social-media-icon {
+.social-media-icon {
     width: auto;
     height: 40px;
 }
+
+/* GOOGLE MAPS */
 
 .iframe-rwd {
     position: relative;
@@ -113,11 +267,7 @@ header nav {
     height: 100%;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
-}
+/* OTHERS */
 
 @media only screen and (min-width: 601px) {
     .container {

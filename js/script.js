@@ -1,10 +1,17 @@
+// script.js
+
 $(function() {
 
-	var minWidth = "993";
+	var minWidth = "980";
 
+	$("#small-nav").hide();
 	setNav();
 
-    $(window).resize(setNav);
+	$(window).resize(setNav);
+
+	$(".btn-small-nav-toggle").click(function() {
+		$("#small-nav").toggle();
+	});
     
     function isSmallScreen() {
 		var screenWidth = $(window).width();
@@ -13,12 +20,17 @@ $(function() {
     
     function setNav() {
     	if (isSmallScreen()) {
-    		$("#big-nav").hide();
-    	    $("#small-nav").show();
+			$("#big-nav").hide();
+			$(".btn-small-nav-toggle").show();
+			$("#chxyz-icon").addClass("chxyz-nav-icon-small");
+			$("#chxyz-icon").removeClass("chxyz-nav-icon-big");
     	}
     	else {
-    		$("#small-nav").hide();
-    	    $("#big-nav").show();
+			$("#small-nav").hide();
+    		$(".btn-small-nav-toggle").hide();
+			$("#big-nav").show();
+			$("#chxyz-icon").addClass("chxyz-nav-icon-big");
+			$("#chxyz-icon").removeClass("chxyz-nav-icon-small");
     	}
 	};
 });
