@@ -22,15 +22,15 @@ $(function() {
     	if (isSmallScreen()) {
 			$("#big-nav").hide();
 			$(".btn-small-nav-toggle").show();
-			$("#chxyz-icon").addClass("chxyz-nav-icon-small");
-			$("#chxyz-icon").removeClass("chxyz-nav-icon-big");
+			$("#brand-icon").addClass("brand-nav-icon-small");
+			$("#brand-icon").removeClass("brand-nav-icon-big");
     	}
     	else {
 			$("#small-nav").hide();
     		$(".btn-small-nav-toggle").hide();
 			$("#big-nav").show();
-			$("#chxyz-icon").addClass("chxyz-nav-icon-big");
-			$("#chxyz-icon").removeClass("chxyz-nav-icon-small");
+			$("#brand-icon").addClass("brand-nav-icon-big");
+			$("#brand-icon").removeClass("brand-nav-icon-small");
     	}
 	};
 });
