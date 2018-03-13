@@ -6,22 +6,22 @@
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     </head>
 
     <body>
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
 
-        <header id="nav">
+        <header class="dark-background white-text" id="nav">
             <nav role="navigation" class="container">
                 <div class="header-inline-nav">
-                    <div class="brand-logo">
+                    <div class="float-left">
                         <a href="index.html"><img class="brand-nav-icon-big" id="brand-icon" alt="brand-icon" src="images/brand/brand_logo.png"></a>
                     </div>
                     <ul class="inline-nav" id="big-nav">
                         <li><a href="#help">Ask for help</a></li>
-                        <li><a href="#services">Proposed services</a></li>
+                        <li><a href="#services">Services list</a></li>
                         <li><a href="#prices">Prices</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -29,39 +29,43 @@
                 </div>
                 <ul class="block-nav" id="small-nav">
                     <li><a href="#help">Ask for help</a></li>
-                    <li><a href="#services">Proposed services</a></li>
+                    <li><a href="#services">Services list</a></li>
                     <li><a href="#prices">Prices</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section id="home">
+        <section class="dark-background white-text" id="home">
             <div class="container">
-                <h1 class="center">IT and multimedia services</h1>
-                <div class="row center">
-                    <h3 class="col s12 light">Everywhere in Switzerland</h3>
+                <div class="center">
+                    <h1>IT and multimedia services</h1>
+                    <h3>Everywhere in Switzerland</h3>
                 </div>
             </div>
         </section>
 
-        <section id="help">
+        <section class="shadows-background" id="help">
             <div class="container">
-                <h2>Ask for help</h2>
-                <h3 class="light">At your service, 7 days a week, from 8:00 to 22:00!</h3>
-                <a class="btn-help" href="#contact">click here</a>
+                <div class="center">
+                    <h1>Ask for help</h1>
+                    <h3>At your service, 7 days a week, from 8:00 to 22:00!</h3>
+                </div>
+                <div class="center">
+                    <a class="btn-help" href="#contact">click here</a>
+                </div>
             </div>
         </section>
 
 
 
-        <section id="services">
+        <section class="gradient-background-rgb" id="services">
             <div class="container">
-                <h1 class="center">Proposed services</h1>
-                <div class="row center">
-                    <h5 class="col s12 light">Click on the services to see more.</h5>
+                <div class="center white-text">
+                    <h1>Services list</h1>
+                    <h3>Click on the services to see more.</h3>
                 </div>
-                <div class="row">
+                <div class="row black-text">
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
                         <ul class="collapsible" data-collapsible="accordion">
                             <li>
@@ -127,16 +131,14 @@
                         </ul>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
-        <section id="prices">
-            <div class="container black-text">
-                <h1 class="center">Prices</h1>
-                <div class="row center">
-                    <h5 class="col s12 light">It can't be more advantageous.</h5>
+        <section class="shadows-background black-text" id="prices">
+            <div class="container">
+                <div class="center">
+                    <h1>Prices</h1>
+                    <h3>It can't be more advantageous.</h3>
                 </div>
                 <div class="row">
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
@@ -171,22 +173,22 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section class="dark-background white-text" id="contact">
             <div class="container">
-                <h1 class="center">Contact</h1>
-                <div class="row">
-                    <h4 class="center light">Available 7 days a week, from 8am to 10pm!</h4>
+                <div class="center">
+                    <h1>Contact</h1>
+                    <h3>Available 7 days a week, from 8am to 10pm!</h3>
                 </div>
                 <div class="row">
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
-                        <div class="background-contact-2">
+                        <div class="center">
                             <img src="images/firstName_surName/profile_picture.jpeg" alt="Firstname Surname" class="circle myphoto">
                             <h4 class="no-margin-top light">Firstname Surname</h4>
-                            <h6 class="light no-margin-top">Street_name number, post_code City</h6>
-                            <h6 class="light no-margin-top"><a href="mailto:mail@address.domain">mail@address.domain</a></h6>
-                            <h6 class="light no-margin-top"><a href="tel:phone_number">phone_number</a></h6>
-                            <h6 class="light no-margin-top">From Monday to Sunday</h6>
-                            <h6 class="light no-margin-top">From 08am to 10pm</h6>
+                            <h6>Street_name number, post_code City</h6>
+                            <h6><a href="mailto:mail@address.domain">mail@address.domain</a></h6>
+                            <h6><a href="tel:phone_number">phone_number</a></h6>
+                            <h6>From Monday to Sunday</h6>
+                            <h6>From 08am to 10pm</h6>
                         </div>
                         <div class="iframe-rwd">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1398134.5255457575!2d7.103142172042994!3d46.809594779521035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64ef6f596d61%3A0x5c56b5110fcb7b15!2sSuisse!5e0!3m2!1sfr!2sch!4v1520863451873"
@@ -199,7 +201,7 @@
         </section>
 
 
-        <footer class="page-footer">
+        <footer class="dark-background white-text" id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
@@ -209,9 +211,9 @@
                     <div class="col l4 offset-l2 s12">
                         <h5>Liens</h5>
                         <ul>
-                            <li><a href="https://www.facebook.com/chrys.l" target="_blank"><img class="social-media-icon" src="images/social_media/FB-f-Logo__white_144.png"></a></li>
-                            <li><a href="https://twitter.com/ChrysQuilibet" target="_blank"><img class="social-media-icon" src="images/social_media/Twitter_Social_Icon_Rounded_Square_White.png"></a></li>
-                            <li><a href="https://www.linkedin.com/in/chrys-lissy/" target="_blank"><img class="social-media-icon" src="images/social_media/In-White-128px-R.png"></a></li>
+                            <li class="display-inline-block"><a href="https://www.facebook.com/chrys.l" target="_blank"><img class="social-media-icon" src="images/social_media/FB-f-Logo__white_144.png"></a></li>
+                            <li class="display-inline-block"><a href="https://twitter.com/ChrysQuilibet" target="_blank"><img class="social-media-icon" src="images/social_media/Twitter_Social_Icon_Rounded_Square_White.png"></a></li>
+                            <li class="display-inline-block"><a href="https://www.linkedin.com/in/chrys-lissy/" target="_blank"><img class="social-media-icon" src="images/social_media/In-White-128px-R.png"></a></li>
                         </ul>
                     </div>
                 </div>

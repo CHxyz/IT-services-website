@@ -16,6 +16,10 @@ section {
     display: block;
 }
 
+footer {
+    padding: 10px 0;
+}
+
 ul,
 ol {
     list-style: none;
@@ -26,10 +30,14 @@ a {
     color: inherit;
 }
 
+h3 {
+    font-weight: 300;
+}
+
 /* CUSTOM CLASSES */
 
 .container {
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 1280px;
     width: 90%;
 }
@@ -54,8 +62,39 @@ a {
     display: inline;
 }
 
+.center {
+    text-align: center;
+}
+
+
+/* TEXT */
+
+.thin {
+    font-weight: 100;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
 
 /* COLORS */
+
+.black-background {
+    background: #000;
+}
 
 .dark-background {
     background: #181921;
@@ -130,13 +169,7 @@ a {
     width: auto;
 }
 
-.brand-logo {
-    float: left;
-}
-
 header {
-    background: #181921;
-    color: #fff;
     font-size: 1.2em;
     padding: 10px 0;
     height: 50px;
@@ -176,56 +209,36 @@ header {
 
 /* HOME */
 
-#home {
-    background: #181921;
-    color: #fff;
-}
+/*#home {
+    
+}*/
 
 
 /* HELP */
 
-#background-help {
-    color: #181921;
-    background: linear-gradient( 180deg, #444444cc, #ffffff00 6px), linear-gradient( 0deg, #888888cc, #ffffff00 3px), linear-gradient( #ffffffdd, #ffffffdd);
-}
+/*#background-help {
+
+}*/
 
 
 /* SERVICES */
 
-#services {
-    color: #fff;
-    background: linear-gradient( 45deg, #ff000088, #ff000000 70%), linear-gradient( 315deg, #00ff0088, #00ff0000 70%), linear-gradient( 180deg, #0000ff88, #0000ff00 70%);
-}
+/*#services {
 
-#services ul {
-    color: #000;
-}
-
+}*/
 
 /* PRICES */
 
-#prices {
-    background: linear-gradient( 180deg, #444444cc, #ffffff00 6px), linear-gradient( 0deg, #444444cc, #ffffff00 4px), linear-gradient( #ffffffdd, #ffffffdd);
-}
+/*#prices {
+
+}*/
 
 
 /* CONTACT */
 
-#contact {
-    color: #fff;
-    background-color: #181921;
-}
-
-#contact-2 {
-    padding: 20px 20px;
-    color: #fff;
-    border-radius: 2px;
-}
-
-#contact-2 i {
-    margin-right: 10px;
-    font-size: 30px;
-}
+/*#contact {
+    
+}*/
 
 #profile-picture {
     width: auto;
@@ -234,13 +247,10 @@ header {
 
 /* FOOTER */
 
-footer {
-    background-color: #181921;
-    color: #fff;
-}
+/*footer {
+}*/
 
-.page-footer ul li {
-    display: inline-block;
+footer ul li {
     margin-right: 15px
 }
 
