@@ -12,7 +12,11 @@ body {
 }
 
 section {
-    padding: 10px 0;
+    padding: 20px 0;
+    display: block;
+}
+
+nav {
     display: block;
 }
 
@@ -30,9 +34,24 @@ a {
     color: inherit;
 }
 
+h1 {
+    font-weight: 400;
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
 h3 {
     font-weight: 300;
+    font-size: 32px;
+    margin-bottom: 15px;
 }
+
+h4 {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
 
 /* CUSTOM CLASSES */
 
@@ -135,24 +154,7 @@ h3 {
 }
 
 .shadows-background {
-    background: 
-        linear-gradient( 
-            180deg, 
-            #444444cc, 
-            #ffffff00 6px
-        )
-    , 
-        linear-gradient( 
-            0deg, 
-            #444444cc, 
-            #ffffff00 4px
-        )
-    , 
-        linear-gradient( 
-            #ffffffdd, 
-            #ffffffdd
-        )
-    ;
+    box-shadow: 0px 2px 8px 0px #00000088 inset;
 }
 
 /* CONTENT */
@@ -188,21 +190,20 @@ header {
     margin-right: 15px;
     height: 50px;
     line-height: 50px;
-
 }
 
 .btn-small-nav-toggle {
     float: right;
     margin-right: 15px;
-    height: 50px;
-    line-height: 50px;
+    height: 30px;
+    line-height: 30px;
 }
 
 .block-nav li {
     display: block;
     margin-right: 15px;
-    height: 25px;
-    line-height: 25px;
+    height: 30px;
+    line-height: 30px;
     clear: left;
 }
 
@@ -220,6 +221,20 @@ header {
 
 }*/
 
+.btn-help {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    width: 120px;
+    margin: 20px auto;
+    border-radius: 2px;
+    border: #181921;
+    border-style: solid;
+    border-width: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
 
 /* SERVICES */
 
