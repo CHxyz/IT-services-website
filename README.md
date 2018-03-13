@@ -6,5 +6,3 @@
 Using HTML, CSS, Javascript / jQery.
 
 Maybe using React or Preact as well.
-
-test
