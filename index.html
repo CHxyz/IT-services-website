@@ -9,39 +9,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     </head>
 
-    <body>
+    <body class="dark-background">
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
 
         <header class="dark-background white-text" id="nav">
-            <nav role="navigation" class="container">
-                <div class="header-inline-nav">
-                    <div class="float-left">
-                        <a href="index.html"><img class="brand-nav-icon-big" id="brand-icon" alt="brand-icon" src="images/brand/brand_logo.png"></a>
-                    </div>
-                    <ul class="inline-nav" id="big-nav">
-                        <li><a href="#help">Ask for help</a></li>
-                        <li><a href="#services">Services list</a></li>
-                        <li><a href="#prices">Prices</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <a href="#" class="btn-small-nav-toggle"><i class="material-icons">menu</i></a>
+            <div class="container">
+                <div class="float-left">
+                    <a href="index.html"><img class="brand-nav-icon-big" id="brand-icon" alt="brand-icon" src="images/brand/brand_logo.png"></a>
                 </div>
-                <ul class="block-nav" id="small-nav">
-                    <li><a href="#help">Ask for help</a></li>
-                    <li><a href="#services">Services list</a></li>
-                    <li><a href="#prices">Prices</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+                <div class="float-right">
+                    <a style="display: none;" href="#" class="btn-small-nav-toggle"><i class="material-icons">menu</i></a>
+                </div>
+                <nav role="navigation">
+                    <ul style="display: none;" class="inline-nav right" id="big-nav">
+                        <li><a class="thin nav-help" href="#help">Ask for help</a></li>
+                        <li><a class="thin nav-services" href="#services">Services list</a></li>
+                        <li><a class="thin nav-prices" href="#prices">Prices</a></li>
+                        <li><a class="thin nav-contact" href="#contact">Contact</a></li>
+                    </ul>
+                    <ul style="display: none;" class="block-nav" id="small-nav">
+                        <li><a class="thin nav-help" href="#help">Ask for help</a></li>
+                        <li><a class="thin nav-services" href="#services">Services list</a></li>
+                        <li><a class="thin nav-prices" href="#prices">Prices</a></li>
+                        <li><a class="thin nav-contact" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <section class="dark-background white-text" id="home">
             <div class="container">
                 <div class="center">
-                    <h1>IT and multimedia services</h1>
-                    <h3>Everywhere in Switzerland</h3>
-                    <h4>To help you with technology issues</h4>
+                    <h1 class="bold">IT and multimedia services</h1>
+                    <h3 class="thin">Everywhere in Switzerland</h3>
+                    <h4 class="thin">To help you with technology issues</h4>
                 </div>
             </div>
         </section>
@@ -53,25 +55,25 @@
                     <h3>At your service, 7 days a week, from 8:00 to 22:00!</h3>
                 </div>
                 <div class="center">
-                    <a class="flat-btn black-text uppercase" id="btn-help" href="#contact">click here</a>
+                    <a class="flat-btn black-text uppercase" id="btn-help" href="#contact">contact me</a>
                 </div>
             </div>
         </section>
 
 
-
+        <div class="white-background">
         <section class="gradient-background-rgb" id="services">
             <div class="container">
                 <div class="center white-text">
                     <h1>Services list</h1>
-                    <h3>Click on the services to see more.</h3>
+                    <h5 class="thin">Click on the services to see more.</h5>
                 </div>
-                <div class="row black-text">
-                    <div class="col l8 offset-l2 m10 offset-m1 s12">
-                        <ul class="collapsible" data-collapsible="accordion">
+                <div>
+                    <div id="services-list">
+                        <ul class="collapsible">
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">report_problem</i>Dépannage et assistance</div>
-                                <div class="collapsible-body"><span>Dépannage et assistance. PC, Mac, smartphone (téléphone mobile), tablette, imprimante, et autres.</span></div>
+                                <div class="collapsible-body active"><span>Dépannage et assistance. PC, Mac, smartphone (téléphone mobile), tablette, imprimante, et autres.</span></div>
                             </li>
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">system_update_alt</i>Installation</div>
@@ -87,7 +89,7 @@
                             </li>
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">compare_arrows</i>Transferts de données</div>
-                                <div class="collapsible-body"><span>TTransfert de données sur un (nouvel) appareil. PC, Mac, smartphone (téléphone mobile), tablettes, appareils photos, caméras et autres.</span></div>
+                                <div class="collapsible-body"><span>Transfert de données sur un (nouvel) appareil. PC, Mac, smartphone (téléphone mobile), tablettes, appareils photos, caméras et autres.</span></div>
                             </li>
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">delete_forever</i>Débarras</div>
@@ -119,7 +121,7 @@
                             </li>
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">terrain</i>Prise de vue aérienne</div>
-                                <div class="collapsible-body"><span>Photographies et enregistrements vidéos par drone.</span></div>
+                                <div class="collapsible-body"><span>Photographies et enregistrements vidéo par drone.</span></div>
                             </li>
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">build</i>Réparation iPhone</div>
@@ -127,50 +129,44 @@
                             </li>
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">question_answer</i>Questions?</div>
-                                <div class="collapsible-body"><span>Vous avez une question sur quelque chose qui n'est pas dans la liste? Ça ne coute rien de demander! J'y répondrai avec plaisir, en espérant pouvoir vous aider.</span></div>
+                                <div class="collapsible-body"><span>Vous avez une question sur un sujet qui n'est pas dans la liste? Ça ne coute rien de demander! J'y répondrai avec plaisir, en espérant pouvoir vous aider.</span></div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+        </div>
+        
 
         <section class="white-background shadows-background black-text" id="prices">
             <div class="container">
                 <div class="center">
                     <h1>Prices</h1>
-                    <h3>It can't be more advantageous.</h3>
+                    <h5 class="thin">It can't be more advantageous.</h5>
                 </div>
-                <div class="row">
-                    <div class="col l8 offset-l2 m10 offset-m1 s12">
-                        <table class="tarifs">
-                            <thead>
-                                <tr>
-                                    <th>Description</th>
-                                    <th>Quantity (unit)</th>
-                                    <th class="right">Price (CHF)</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>Hourly rate</td>
-                                    <td>1 h</td>
-                                    <td class="right">30.00</td>
-                                </tr>
-                                <tr>
-                                    <td>Travel</td>
-                                    <td>1 km</td>
-                                    <td class="right">00.20</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="right">
-                            <p class="light">Cash settlement.</p>
-                        </div>
-                    </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Quantity (unit)</th> 
+                            <th class="right">Price (CHF)</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Hourly rate</td>
+                        <td>1 h</td>
+                        <td class="right">40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Travel</td>
+                        <td>1 km</td>
+                        <td class="right">00.20</td>
+                    </tr>
+                </table>
+                <div class="right" id="how-to-pay">
+                    <p class="light">Règlement en cash.</p>
                 </div>
-
             </div>
         </section>
 
@@ -186,8 +182,8 @@
                             <img src="images/firstName_surName/profile_picture.jpeg" alt="Firstname Surname" class="circle shadow" id="profile-picture">
                             <h4 class="no-margin-top light">Firstname Surname</h4>
                             <h5>Street_name number, post_code City</h5>
-                            <h5><a href="mailto:mail@address.domain">mail@address.domain</a></h5>
-                            <h5><a href="tel:phone_number">phone_number</a></h5>
+                            <h5><a style="color: #039be5" href="mailto:mail@address.domain">mail@address.domain</a></h5>
+                            <h5><a style="color: #039be5" href="tel:phone_number">phone_number</a></h5>
                             <h5>From Monday to Sunday</h5>
                             <h5>From 08am to 10pm</h5>
                         </div>
@@ -220,7 +216,7 @@
             <div id="footer-copyright">
                 <div class="container">
                     © 2018 Firstname Surname
-                    <a href="https://www.linkedin.com/in/chrys-lissy/" target="_blank"><img class="float-right social-media-icon" src="images/social_media/Logo-White-128px-R.png"></a>
+                    <a href="https://www.linkedin.com/in/chrys-lissy/" target="_blank"><img  style="cursor: pointer;" class="float-right social-media-icon" src="images/social_media/Logo-White-128px-R.png"></a>
                 </div>
             </div>
         </footer>

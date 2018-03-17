@@ -2,7 +2,7 @@
 
 $(function() {
 
-	var minWidth = "980";
+	var minWidth = "800";
 
 	$("#small-nav").hide();
 	setNav();
@@ -10,7 +10,7 @@ $(function() {
 	$(window).resize(setNav);
 
 	$(".btn-small-nav-toggle").click(function() {
-		$("#small-nav").toggle();
+		$("#small-nav").stop(true,false).slideToggle();
 	});
     
     function isSmallScreen() {
@@ -23,6 +23,7 @@ $(function() {
 			$("#big-nav").hide();
 			$(".btn-small-nav-toggle").show();
 			$("#brand-icon").addClass("brand-nav-icon-small");
+			$("header").addClass("header-small");
 			$("#brand-icon").removeClass("brand-nav-icon-big");
     	}
     	else {
@@ -31,6 +32,12 @@ $(function() {
 			$("#big-nav").show();
 			$("#brand-icon").addClass("brand-nav-icon-big");
 			$("#brand-icon").removeClass("brand-nav-icon-small");
+			$("header").removeClass("header-small");
     	}
 	};
+
+	$('.collapsible').find('.collapsible-header').click(function(e){
+		$('.collapsible-body').slideUp(250);
+		$(this).parent().children('.collapsible-body').stop(true,false).slideToggle(250);
+	});
 });

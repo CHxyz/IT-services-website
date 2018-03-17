@@ -3,12 +3,19 @@
 * {
     margin: 0;
     padding: 0;
+    cursor: auto;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     display: block;
+}
+
+header {
+    font-size: 1.2em;
+    padding: 10px 0;
+    height: 50px;
 }
 
 section {
@@ -18,7 +25,24 @@ section {
 }
 
 nav {
+    float:right;
+}
+
+nav ul {
+    text-align: left;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li:hover {
+    background: #0008;
+}
+
+nav ul li a {
     display: block;
+    padding: 15px 25px;
 }
 
 footer {
@@ -33,6 +57,7 @@ ol {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 h1 {
@@ -59,6 +84,24 @@ h5 {
     margin-bottom: 25px;
 }
 
+table {
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
+
+thead {
+    border-bottom: 1px solid #000;
+}
+
 
 /* CUSTOM CLASSES */
 
@@ -66,6 +109,10 @@ h5 {
     margin: 0 auto;
     max-width: 1280px;
     width: 90%;
+}
+
+.header-small {
+    height: 30px;
 }
 
 .no-margin-bottom {
@@ -96,18 +143,33 @@ h5 {
     text-align: center;
 }
 
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
 .flat-btn {
     height: 40px;
-    width: 120px;
+    width: 140px;
     margin: 20px auto;
     line-height: 40px;
     font-weight: 700;
     font-size: 16px;
 
+    cursor: pointer;
+
     display: block;
     border-radius: 2px;
     border-style: solid;
     border-width: 2px;
+}
+
+.btn-small-nav-toggle i{
+    cursor: pointer;
+    margin-top: 2px;
 }
 
 .dark-border {
@@ -119,6 +181,42 @@ h5 {
 }
 .circle {
     border-radius: 50%;
+}
+
+.material-icons {
+    margin-right: 20px;
+}
+
+.collapsible {
+    margin: 20px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px 0px #00000088;
+}
+
+.collapsible-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background: #fffc;
+    border-bottom: 1px solid #ccc;
+}
+
+.collapsible-body {
+    display: none;
+    padding: 25px;
+    background: #fffa;
+    border-bottom: 1px solid #ccc;
+    line-height: 24px;
+    color: #181921;
+}
+
+.active {
+    display: block;
 }
 
 
@@ -170,6 +268,10 @@ h5 {
     color: #000;
 }
 
+.dark-text {
+    color: #181921;
+}
+
 .gradient-background-rgb {
     background: 
         linear-gradient(
@@ -207,87 +309,51 @@ h5 {
 .brand-nav-icon-big {
     height: 50px;
     width: auto;
+    cursor: pointer;
 }
 
 .brand-nav-icon-small {
     height: 30px;
     width: auto;
+    cursor: pointer;
 }
 
-header {
-    font-size: 1.2em;
-    padding: 10px 0;
-    height: 50px;
-}
-
-.header-inline-nav {
-    display: inline;
-}
-
-.inline-nav {
-    float: right;
-}
-
-.inline-nav li {
-    display: inline-block;
-    margin-right: 15px;
-    height: 50px;
-    line-height: 50px;
-}
-
-.btn-small-nav-toggle {
-    float: right;
-    margin-right: 15px;
-    height: 30px;
-    line-height: 30px;
-}
-
-.block-nav li {
+#small-nav {
     display: block;
-    margin-right: 15px;
-    height: 30px;
-    line-height: 30px;
-    clear: left;
 }
 
+#small-nav li {
+    margin-right: 16px;
+    float: none;
+    display: block;
+}
+
+nav #small-nav li a {
+    font-size: 16px;
+    display: block;
+    padding: 5px 20px 6px 20px;
+    margin: 0 0 2px 0;
+}
 
 /* HOME */
 
-/*#home {
-    
-}*/
 
-
-/* HELP */
-
-/*#background-help {
-
-}*/
-
-/*#btn-help {
-    
-}*/
+/* HELP *7/
 
 
 /* SERVICES */
-
-/*#services {
-
-}*/
+#services-list {
+    margin: 0 auto;
+    width: 90%;
+}
 
 /* PRICES */
-
-/*#prices {
-
-}*/
-
+#how-to-pay {
+    width:70%;
+    margin:0 auto;
+}
 
 /* CONTACT */
-
-/*#contact {
-    
-}*/
-
 #profile-picture {
     width: auto;
     height: 250px;
@@ -342,10 +408,18 @@ footer ul li {
     .container {
         width: 85%;
     }
+
+    #services-list {
+        width: 85%;
+    }
 }
 
 @media only screen and (min-width: 993px) {
     .container {
+        width: 70%;
+    }
+
+    #services-list {
         width: 70%;
     }
 }
