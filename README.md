@@ -6,3 +6,5 @@
 Using HTML, CSS, Javascript / jQery.
 
 Maybe using React or Preact as well.
+
+This is a template version, you can see my personal version here: [services-ch.xyz](services-ch.xyz)
